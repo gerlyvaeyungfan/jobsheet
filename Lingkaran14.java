@@ -13,6 +13,7 @@ public class Lingkaran14 {
 
         keliling = 2 * phi * r;
         luas = phi * r * r;
-        System.out.println("\nKeliling : " + keliling + "\nLuas     : " + luas);
+        System.out.println("\nKeliling : " + keliling);
+        System.out.println("\nLuas     : " + luas);
     }
 }
