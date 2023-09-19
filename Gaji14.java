@@ -5,7 +5,7 @@ public class Gaji14 {
         Scanner input = new Scanner(System.in);
         int jmlMasuk, jmlTdkMasuk, totalGaji;
         int gaji, ptgnGaji;
-        System.out.print("Masukan Jumlah Gaji Anda : : ");
+        System.out.print("Masukan Jumlah Gaji Anda : ");
         gaji = input.nextInt();
         System.out.print("Masukan Jumlah Potongan Gaji Anda : ");
         ptgnGaji = input.nextInt();
