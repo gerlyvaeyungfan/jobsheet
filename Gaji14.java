@@ -15,6 +15,6 @@ public class Gaji14 {
         jmlTdkMasuk = input.nextInt();
 
         totalGaji = (jmlMasuk * gaji) - (jmlTdkMasuk * ptgnGaji);
-        System.out.println("\nTotal Gaji Yang Anda Terima Adalah Rp." + totalGaji + "\n");
+        System.out.println("Total Gaji Yang Anda Terima Adalah Rp." + totalGaji + "\n");
     }
 }
