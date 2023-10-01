@@ -1,3 +1,8 @@
+//Nama kelompok :
+//Aprilia Putri Anggraeni 	(2341760043)
+//Gerly Vaeyungfan 		    (2341760195)
+//Jaden Natha Kautsar 		(2341760068)
+
 import java.util.Scanner;
 
 public class ProyekJobsheet4 {
