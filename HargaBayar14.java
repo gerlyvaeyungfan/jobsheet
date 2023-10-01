@@ -25,7 +25,7 @@ public class HargaBayar14 {
 
         System.out.println("\nNama Merk Buku yang Anda beli : " + merkBuku);
         System.out.println("Jumlah Halaman Buku yang Anda beli : " + jmlHalBuku);
-        System.out.println("Diskon yang Anda dapatkan adalah : " + jmlDis);
+        System.out.println("Diskon yang Anda dapatkan adalah : Rp." + jmlDis);
         System.out.println("Diskon yang harus Anda bayar adalah : Rp." + bayar);
     }
 }
