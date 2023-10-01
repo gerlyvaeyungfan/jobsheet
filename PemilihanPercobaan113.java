@@ -11,5 +11,7 @@ public class PemilihanPercobaan113 {
             System.out.println("Angka " + angka + " bilangan ganjil");
         else if (angka == 2)
             System.out.println("Angka " + angka + " bilangan genap");
+        else
+            System.out.println("Masukkan Angka yang benar");
     }
 }
