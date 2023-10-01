@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class KelompokJobsheet4 {
+public class ProyekJobsheet4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
