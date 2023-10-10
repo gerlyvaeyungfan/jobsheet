@@ -8,7 +8,7 @@ public class WhileKelipatan14 {
         int kelipatan;
         int total = 0;
         int counter = 0;
-        System.out.print("Masukkan bilangan kelipatan (1-9): ");
+        System.out.print("Masukkan bilangan kelipatan (1-9) : ");
         kelipatan = scan.nextInt();
 
         int i = 1;
