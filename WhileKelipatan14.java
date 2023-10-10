@@ -22,6 +22,6 @@ public class WhileKelipatan14 {
         rataRata = total / counter;
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
         System.out.printf("Total bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, total);
-        System.out.println("Rata-rata: " + rataRata);
+        System.out.println("Rata-rata : " + rataRata);
     }
 }
