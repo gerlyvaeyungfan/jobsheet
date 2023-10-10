@@ -3,13 +3,11 @@ import java.util.Scanner;
 public class WhileGaji14 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
         int jumlahKaryawan, jumlahJamLembur;
         double gajiLembur = 0, totalGajiLembur = 0;
         String jabatan;
         System.out.print("Masukkan Jumlah Karyawan: ");
         jumlahKaryawan = scan.nextInt();
-
         int i = 0;
         while (i < jumlahKaryawan) {
             System.out.println("Pilihan Jabatan - Direktur, Manajer, Karyawan");
@@ -24,9 +22,11 @@ public class WhileGaji14 {
                 gajiLembur = jumlahJamLembur * 100000;
             } else if (jabatan.equalsIgnoreCase("karyawan")) {
                 gajiLembur = jumlahJamLembur * 75000;
-            } else
-                System.out.print("Jabatan invalid");
-
+            } else {
+                System.out.println("Jabatan invalid");
+                i--;
+                continue;
+            }
             totalGajiLembur += gajiLembur;
             System.out.println("Total gaji lembur: " + totalGajiLembur);
         }
