@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ArrayRataNilai14 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan jumlah mahasiswa: ");
+        System.out.print("Masukkan jumlah mahasiswa : ");
         int n = sc.nextInt();
         int nilaiMhs[] = new int[n];
         double totalLulus = 0;
@@ -28,7 +28,7 @@ public class ArrayRataNilai14 {
         }
         rata2Lulus = totalLulus / jmlLulus;
         rata2TidakLulus = totalTidakLulus / jmlTidakLulus;
-        System.out.println("Rata-rata nilai Lulus = " + rata2Lulus);
+        System.out.println("Rata-rata nilai Lulus = " +  rata2Lulus);
         System.out.println("Rata-rata nilai Tidak Lulus = " + rata2TidakLulus);
     }
 }
