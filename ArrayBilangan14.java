@@ -1,5 +1,5 @@
 
-public class Arrayilangan14 {
+public class ArrayBilangan14 {
     public static void main(String[] args) {
 
         double bil[] = { 5.0, 12867, 7.5, 2000000 };
