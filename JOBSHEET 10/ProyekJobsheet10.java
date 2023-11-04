@@ -41,7 +41,7 @@ public class ProyekJobsheet10 {
                         tarif = tm * 90000;
                         if (tm <= 900) {
                             System.out.println("\nAtas Nama       : " + name);
-                            System.out.println("Nama Gedung     : " + namaGd[0]);
+                            System.out.println("Nama Gedung     : " + namaGd[0][0]);
                             System.out.println("Tanggal         : " + tgl);
                             System.out.println("Jumlah Tamu     : " + tm);
                             System.out.println("Total Biaya     : Rp." + tarif);
@@ -61,7 +61,7 @@ public class ProyekJobsheet10 {
                         tarif = tm * 25000;
                         if (tm <= 250) {
                             System.out.println("\nNama Anda       : " + name);
-                            System.out.println("Nama Gedung     : " + namaGd[1]);
+                            System.out.println("Nama Gedung     : " + namaGd[1][0]);
                             System.out.println("Tanggal         : " + tgl);
                             System.out.println("Jumlah Tamu     : " + tm);
                             System.out.println("Total Biaya     : Rp." + tarif);
@@ -81,7 +81,7 @@ public class ProyekJobsheet10 {
                         tarif = tm * 10000;
                         if (tm <= 100) {
                             System.out.println("\nNama Anda       : " + name);
-                            System.out.println("Nama Gedung     : " + namaGd[2]);
+                            System.out.println("Nama Gedung     : " + namaGd[2][0]);
                             System.out.println("Tanggal         : " + tgl);
                             System.out.println("Jumlah Tamu     : " + tm);
                             System.out.println("Total Biaya     : Rp." + tarif);
@@ -102,7 +102,7 @@ public class ProyekJobsheet10 {
 
                         if (tm <= 500) {
                             System.out.println("\nNama Anda       : " + name);
-                            System.out.println("Nama Gedung     : " + namaGd[3]);
+                            System.out.println("Nama Gedung     : " + namaGd[3][0]);
                             System.out.println("Tanggal         : " + tgl);
                             System.out.println("Jumlah Tamu     : " + tm);
                             System.out.println("Total Biaya     : Rp." + tarif);
@@ -115,6 +115,7 @@ public class ProyekJobsheet10 {
                         break;
                 }
             } else if (konfirmasi.equalsIgnoreCase("t")) {
+                System.out.print("Terima kasih! Program Selesai");
                 System.exit(0);
             } else {
                 System.out.println("Maaf, pilihan anda salah! Silakan ulangi.");
