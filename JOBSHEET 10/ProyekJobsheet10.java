@@ -1,9 +1,9 @@
 import java.util.Scanner;
-
 public class ProyekJobsheet10 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int tm, gd;
+        long tarif;
         String name, tgl, konfirmasi;
         String namaGd[][] = { 
             {"Gedung Pernikahan",  "900 Orang", "Rp. 90000"},
@@ -11,8 +11,6 @@ public class ProyekJobsheet10 {
             {"Gedung Kesenian", "100 Orang", "Rp. 10000"},
             {"Gedung Auditorium", "500 Orang", "Rp. 50000"}
         };
-        long tarif;
-
         while (true) {
             System.out.print("\nApakah Anda ingin memesan gedung (y/t)? ");
             konfirmasi = input.next();
@@ -26,8 +24,15 @@ public class ProyekJobsheet10 {
                     }
                     System.out.println();
                 }
-                System.out.print("\nMasukkan Nomor Gedung yang akan dipesan : ");
-                gd = input.nextInt();
+                do {
+                    System.out.print("\nMasukkan Nomor Gedung yang akan dipesan : ");
+                    gd = input.nextInt();
+                
+                    if (gd < 1 || gd > 4) {
+                        System.out.println("Mohon masukkan nomor gedung antara 1 dan 4.");
+                    }
+                } while (gd < 1 || gd > 4);
+                
                 switch (gd) {
                     case 1:
                         System.out.print("Masukkan Nama Anda : ");
@@ -106,13 +111,10 @@ public class ProyekJobsheet10 {
                             System.out.println("Tanggal         : " + tgl);
                             System.out.println("Jumlah Tamu     : " + tm);
                             System.out.println("Total Biaya     : Rp." + tarif);
-                        } else {
-                            System.out.println("Mohon maaf jumlah tamu melebihi kapasitas");
-                        }
-                        break;
-                    default:
-                        System.out.println("Pilihan tidak tersedia!");
-                        break;
+                    } else {
+                        System.out.println("Mohon maaf jumlah tamu melebihi kapasitas");
+                    }
+                    break;
                 }
             } else if (konfirmasi.equalsIgnoreCase("t")) {
                 System.out.print("Terima kasih! Program Selesai");
