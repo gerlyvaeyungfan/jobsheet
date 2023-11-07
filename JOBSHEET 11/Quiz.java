@@ -30,6 +30,7 @@ public class Quiz {
             System.out.print("Apakah anda ingin mengulang permainan (Y/y)? ");
             menu = input.nextLine().charAt(0);
 
+
         } while (menu=='y'||menu=='Y');
     }
 }
