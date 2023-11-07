@@ -31,6 +31,6 @@ public class Quiz {
             menu = input.nextLine().charAt(0);
 
 
-        } while (menu=='y'||menu=='Y');
+        } while (false);
     }
 }
