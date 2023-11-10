@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ProyekJobsheet10 {
+public class ProyekJobsheet11 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int tm, gd;
@@ -39,7 +39,7 @@ public class ProyekJobsheet10 {
                         name = input.next();
                         System.out.print("Masukkan Tanggal Acara (DD-MM-YYY) : ");
                         tgl = input.next();
-                        System.out.println("Kapasitas Maksimal tamu 900.");
+                        System.out.println("\nKapasitas Maksimal tamu 900.");
                         System.out.println("Tarif yang harus anda bayar Rp.90000/tamu");
                         do {
                             System.out.print("Masukkan Jumlah Tamu : ");
