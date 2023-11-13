@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+import javax.sound.midi.Soundbank;
 public class ProyekJobsheet11 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,10 +12,12 @@ public class ProyekJobsheet11 {
         int tm, gd, menuGd1, menuGd2, menuGd3, menuGd4;
         String name, tgl, verivikasi;
         long tarif;
-        String[] newUser = new String[100];
-        String[] newPw = new String[100];
-        int userCount = 0;
-        userCount++;
+        String[] regUserMemb = new String[100];
+        String[] regPwMemb = new String[100];
+        int jmlUserMemb = 0;
+        regUserMemb[jmlUserMemb] = "member";
+        regPwMemb[jmlUserMemb] = "12345";
+        jmlUserMemb++;
         String namaGd[][] = { 
             {"Gedung Pernikahan",  "900 Orang", "Rp. 90000"},
             {"Gedung Olahraga", "250 Orang", "Rp. 25000"},
@@ -21,8 +25,10 @@ public class ProyekJobsheet11 {
             {"Gedung Auditorium", "500 Orang", "Rp. 50000"}
         };
         String akun;
+        System.out.println("SELAMAT DATANG DI WEBSITE BOOKING GDEUNG");
+        System.out.println("Silahkan masuk untuk melanjutkan!");
         do {
-            System.out.print("Apakah Anda sudah punya akun? (y/t)");
+            System.out.print("Apakah Anda sudah punya akun? (y/t) ");
             akun = input.next();
 
             if (akun.equals("t")){
@@ -31,9 +37,9 @@ public class ProyekJobsheet11 {
                 System.out.print("Masukkan password baru: ");
                 String inputPwBaru = input.next();
 
-                newUser[userCount] = inputUserBaru;
-                newPw[userCount] = inputPwBaru;
-                userCount++;
+                regUserMemb[jmlUserMemb] = inputUserBaru;
+                regPwMemb[jmlUserMemb] = inputPwBaru;
+                jmlUserMemb++;
                 System.out.println("User baru berhasil terdaftar!");
             } else if (akun.equals("y")) {
 
@@ -59,6 +65,7 @@ public class ProyekJobsheet11 {
             {"admin2", "admin222"}
         };
         boolean userAdminValid;
+        int menuAdm;
         do{
         System.out.print("Masukkan username: ");
         inputUserAdmin = input.next();
@@ -79,6 +86,22 @@ public class ProyekJobsheet11 {
         }
         } while (!userAdminValid);
 
+        System.out.println("1. lihat data member");
+        System.out.println("2. Keluar");
+        System.out.print("Masukkan Pilihan : ");
+        menuAdm=input.nextInt();
+        switch (menuAdm) {
+            case 1:
+                System.out.println("\nJumlah Member : "+jmlUserMemb );
+                System.out.println("User yang telah terdaftar :\n");
+                for (int i = 0; i < jmlUserMemb; i++) {
+                    System.out.println("Username : " + regUserMemb[i]);
+                    System.out.println("Password : " + regPwMemb[i]);
+                    System.out.println("---------------------------");
+                }
+            case 2:
+                System.exit(0);
+        }   
     } else if (stepLogin==2){
 
         boolean userMemberValid;
@@ -88,8 +111,8 @@ public class ProyekJobsheet11 {
         System.out.print("Masukkan password: ");
         inputPwMember = input.next();
         userMemberValid=false;
-        for (int i = 0; i < userCount; i++) {
-            if (inputUserMember.equals(newUser[i]) && inputPwMember.equals(newPw[i])) {
+        for (int i = 0; i < jmlUserMemb; i++) {
+            if (inputUserMember.equals(regUserMemb[i]) && inputPwMember.equals(regPwMemb[i])) {
                 userMemberValid = true;
                 break;
             }
@@ -101,7 +124,6 @@ public class ProyekJobsheet11 {
             System.out.println("Login gagal. Username atau password salah. Silakan coba lagi.");
         }
         } while (!userMemberValid);
-        
         while (true) {
             System.out.print("\nApakah Anda ingin memesan gedung (y/t)? ");
             verivikasi = input.next();
