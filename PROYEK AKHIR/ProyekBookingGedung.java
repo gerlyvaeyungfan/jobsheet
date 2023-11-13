@@ -58,7 +58,7 @@ public class ProyekBookingGedung {
                     System.out.println("|   1. Login Admin                             |");
                     System.out.println("|   2. Login Member                            |");
                     System.out.println("|   3. Keluar                                  |");
-                    System.out.println("|______________________________________________|");
+                    System.out.println("|_____________________________________________/.");
                 do {
                     System.out.print("Masukkan Pilihan Anda (1-3) : ");
                     stepLogin = input.nextInt();
@@ -149,7 +149,7 @@ public class ProyekBookingGedung {
                                 System.out.print("|");
                                 System.out.println();
                             }
-                            System.out.println("|_____|__________________________|_______________|______________|");
+                            System.out.println("|_____|__________________________|_______________|_____________/.");
                             do {
                                 System.out.print("Masukkan Nomor Gedung yang akan dipesan : ");
                                 gd = input.nextInt();
@@ -205,7 +205,7 @@ public class ProyekBookingGedung {
                                                     System.out.print("  |");
                                                     System.out.println();
                                                 }
-                                                System.out.println("|_____|__________________|________________|");       
+                                                System.out.println("|_____|__________________|_______________/.");       
                                                 do {
                                                     System.out.print("Masukkan Pilihan Anda : ");
                                                     menuGd1 = input.nextInt();
@@ -221,13 +221,14 @@ public class ProyekBookingGedung {
                                                         subMenu1gd1=input.nextInt();
                                                         hargaPil1gd1=subMenu1gd1*5000;
                                                         totalTarifPil1gd1 = hargaPil1gd1+tarif;
-                                                        System.out.println("\nInformasi Pemesanan Anda!");
+                                                        System.out.println("\n--------Informasi Pemesanan Anda!-------");
                                                         System.out.println("Atas Nama       : " + name);
                                                         System.out.println("Nama Gedung     : " + namaGd[0][0]);
                                                         System.out.println("Tanggal         : " + tgl);
                                                         System.out.println("Jumlah Tamu     : " + tm);
                                                         System.out.println("Barang tambahan : " + brgTersediaGd1[0][0]);
                                                         System.out.println("Total Biaya     : Rp." + totalTarifPil1gd1);
+                                                        System.out.println("----------------------------------------");
                                                         System.exit(0);
                                                         break;
                                                     case 2:
@@ -267,12 +268,13 @@ public class ProyekBookingGedung {
                                                             if (!isKodeValid) {
                                                                 System.out.println("Kode Verifikasi Salah. Silahkan coba lagi");
                                                             } else {
-                                                                System.out.println("\nInformasi Pemesanan Anda!");
+                                                                System.out.println("\n--------Informasi Pemesanan Anda!-------");
                                                                 System.out.println("Atas Nama       : " + name);
                                                                 System.out.println("Nama Gedung     : " + namaGd[0][0]);
                                                                 System.out.println("Tanggal         : " + tgl);
                                                                 System.out.println("Jumlah Tamu     : " + tm);
                                                                 System.out.println("Total Biaya     : Rp." + tarif);
+                                                                System.out.println("----------------------------------------");
                                                             }
                                                         } while (!isKodeValid);
                                                         System.exit(0);;
@@ -344,12 +346,13 @@ public class ProyekBookingGedung {
                                                         if (!isKodeValid) {
                                                             System.out.println("Kode Verifikasi Salah. Silahkan coba lagi");
                                                         } else {
-                                                            System.out.println("\nInformasi Pemesanan Anda!");
+                                                            System.out.println("\n--------Informasi Pemesanan Anda!-------");
                                                             System.out.println("Atas Nama       : " + name);
                                                             System.out.println("Nama Gedung     : " + namaGd[1][0]);
                                                             System.out.println("Tanggal         : " + tgl);
                                                             System.out.println("Jumlah Tamu     : " + tm);
                                                             System.out.println("Total Biaya     : Rp." + tarif);
+                                                            System.out.println("----------------------------------------");
                                                         }
                                                     } while (!isKodeValid);
                                                     break;
@@ -456,12 +459,13 @@ public class ProyekBookingGedung {
                                                         if (!isKodeValid) {
                                                             System.out.println("Kode Verifikasi Salah. Silahkan coba lagi");
                                                         } else {
-                                                            System.out.println("\nInformasi Pemesanan Anda!");
+                                                            System.out.println("\n--------Informasi Pemesanan Anda!-------");
                                                             System.out.println("Atas Nama       : " + name);
                                                             System.out.println("Nama Gedung     : " + namaGd[2][0]);
                                                             System.out.println("Tanggal         : " + tgl);
                                                             System.out.println("Jumlah Tamu     : " + tm);
                                                             System.out.println("Total Biaya     : Rp." + tarif);
+                                                            System.out.println("----------------------------------------");
                                                         }
                                                     } while (!isKodeValid);
                                                         break;
@@ -568,12 +572,13 @@ public class ProyekBookingGedung {
                                                         if (!isKodeValid) {
                                                             System.out.println("Kode Verifikasi Salah. Silahkan coba lagi");
                                                         } else {
-                                                            System.out.println("\nInformasi Pemesanan Anda!");
+                                                            System.out.println("\n--------Informasi Pemesanan Anda!-------");
                                                             System.out.println("Atas Nama       : " + name);
                                                             System.out.println("Nama Gedung     : " + namaGd[3][0]);
                                                             System.out.println("Tanggal         : " + tgl);
                                                             System.out.println("Jumlah Tamu     : " + tm);
                                                             System.out.println("Total Biaya     : Rp." + tarif);
+                                                            System.out.println("----------------------------------------");
                                                         }
                                                     } while (!isKodeValid);
                                                         break;
