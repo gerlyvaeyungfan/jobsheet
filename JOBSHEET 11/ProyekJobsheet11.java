@@ -242,7 +242,7 @@ public class ProyekJobsheet11 {
                                                 long hargaPil1gd1, hargaPil2gd1, hargaPil3gd1, hargaPil4gd1;
                                                 switch (menuGd1) {
                                                     case 1:
-                                                        System.out.print("Jumlah undangan yang ingin dipesan : ");
+                                                        System.out.print("Jumlah undangan yang akan dipesan : ");
                                                         subMenu1gd1=input.nextInt();
                                                         hargaPil1gd1=subMenu1gd1*5000;
                                                         break;
@@ -352,7 +352,7 @@ public class ProyekJobsheet11 {
                                             long hargaPil1gd2, hargaPil2gd2, hargaPil3gd2, hargaPil4gd2;
                                             switch (menuGd2) {
                                                 case 1:
-                                                    System.out.print("Jumlah undangan yang ingin dipesan : ");
+                                                    System.out.print("Jumlah barang yang akan dipesan : ");
                                                     subMenu1gd2=input.nextInt();
                                                     hargaPil1gd2=subMenu1gd2*5000;
                                                     break;
@@ -464,7 +464,7 @@ public class ProyekJobsheet11 {
                                             long hargaPil1gd3, hargaPil2gd3, hargaPil3gd3, hargaPil4gd3;
                                             switch (menuGd3) {
                                                 case 1:
-                                                    System.out.print("Jumlah undangan yang ingin dipesan : ");
+                                                    System.out.print("Jumlah barang yang akan dipesan : ");
                                                     subMenu1gd3=input.nextInt();
                                                     hargaPil1gd3=subMenu1gd3*5000;
                                                     break;
@@ -576,7 +576,7 @@ public class ProyekJobsheet11 {
                                             long hargaPil1gd4, hargaPil2gd4, hargaPil3gd4, hargaPil4gd4;
                                             switch (menuGd4) {
                                                 case 1:
-                                                   System.out.print("Jumlah undangan yang ingin dipesan : ");
+                                                   System.out.print("Jumlah barang yang akan dipesan : ");
                                                     subMenu1gd4=input.nextInt();
                                                     hargaPil1gd4=subMenu1gd4*5000;
                                                     break;
