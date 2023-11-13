@@ -3,29 +3,29 @@ import java.util.Scanner;
 public class ProyekJobsheet11 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int stepLogin;
-        String inputUserAdmin, inputPwAdmin, inputUserMember, inputPwMember;
-        int stepGd1, stepGd2, stepGd3, stepGd4;
+        String akun, inputUserAdmin, inputPwAdmin, inputUserMember, inputPwMember, inputKodeMenu1, inputKodeMenu2;
         String kodeVeriv[] = {"01234", "12345", "23456", "34567", "45678", "56789", "67890"};
-        String inputKodeMenu1, inputKodeMenu2;
-        int tm, gd, menuGd1, menuGd2, menuGd3, menuGd4;
+        int tm, gd, stepLogin, menuGd1, menuGd2, menuGd3, menuGd4, stepGd1, stepGd2, stepGd3, stepGd4;
         String name, tgl, verivikasi;
         long tarif;
+
         String[] regUserMemb = new String[100];
         String[] regPwMemb = new String[100];
         int jmlUserMemb = 0;
         regUserMemb[jmlUserMemb] = "member";
         regPwMemb[jmlUserMemb] = "12345";
         jmlUserMemb++;
+        
         String namaGd[][] = { 
             {"Gedung Pernikahan",  "900 Orang", "Rp. 90000"},
             {"Gedung Olahraga", "250 Orang", "Rp. 25000"},
             {"Gedung Kesenian", "100 Orang", "Rp. 10000"},
             {"Gedung Auditorium", "500 Orang", "Rp. 50000"}
         };
-        String akun;
+
         System.out.println("SELAMAT DATANG DI WEBSITE BOOKING GDEUNG");
         System.out.println("Silahkan masuk untuk melanjutkan!");
+
         do {
             System.out.print("Apakah Anda sudah punya akun? (y/t) ");
             akun = input.next();
@@ -39,6 +39,7 @@ public class ProyekJobsheet11 {
                 regPwMemb[jmlUserMemb] = inputPwBaru;
                 jmlUserMemb++;
                 System.out.println("User baru berhasil terdaftar!");
+
             } else if (akun.equals("y")) {
                 do {
                    System.out.println("*______________________________________________*");
@@ -81,7 +82,7 @@ public class ProyekJobsheet11 {
                         } else {
                             System.out.println("Login gagal. Username atau password salah. Silakan coba lagi.");
                         }
-                   } while (!userAdminValid);
+                    } while (!userAdminValid);
                         System.out.println("1. lihat data member");
                         System.out.println("2. Keluar");
                         System.out.print("Masukkan Pilihan : ");
@@ -98,6 +99,7 @@ public class ProyekJobsheet11 {
                             case 2:
                                 System.exit(0);
                             }   
+
                 } else if (stepLogin==2){
                     boolean userMemberValid;
                     do {
@@ -245,11 +247,11 @@ public class ProyekJobsheet11 {
                                                         hargaPil1gd1=subMenu1gd1*5000;
                                                         break;
                                                     case 2:
-                                                    
+                                                        break;
                                                     case 3:
-
+                                                        break;
                                                     case 4:
-
+                                                        break;
                                                     default:
                                                         break;
                                                 }
@@ -602,13 +604,16 @@ public class ProyekJobsheet11 {
                         }
                         break;
                     }
+
                 } else if (stepLogin==3){
                     System.out.println("Terima kasih.");
                     System.exit(0);
-                }
+                }  
+
             } else if (!akun.equals("y") || !akun.equals("t")){
                 System.out.println("Pilihan tidak tersedia");
             }
+
         } while (!akun.equals("y") || !akun.equals("t"));
     }
 }
