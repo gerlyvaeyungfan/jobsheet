@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import javax.sound.midi.Soundbank;
 public class ProyekJobsheet11 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
