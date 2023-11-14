@@ -167,7 +167,7 @@ public class ProyekGedung {
                                         switch (stepGd) {
                                             case 1:
                                                 System.out.println(",-----------------------------------------<");
-                                                System.out.println("|       Daftar Barang yang tersedia!      |");
+                                                System.out.println("|        Barang Sewa yang tersedia!       |");
                                                 System.out.println("|_________________________________________|");
                                                 System.out.printf("%-5s%-20s\n", "| No.", " | Nama Barang\t | Harga\t  |");
                                                 System.out.println("|-----|------------------|----------------|");
