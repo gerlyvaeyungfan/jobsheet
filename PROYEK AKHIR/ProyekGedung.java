@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ProyekDemo {
+public class ProyekGedung {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String akun, inputUserAdmin, inputPwAdmin, inputUserMember, inputPwMember, inputKodeMenu1, inputKodeMenu2;
