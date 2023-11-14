@@ -5,7 +5,7 @@ public class ProyekGedung {
         Scanner input = new Scanner(System.in);
         String akun, inputUserAdmin, inputPwAdmin, inputUserMember, inputPwMember, inputKodeMenu1, inputKodeMenu2;
         String kodeVeriv[] = {"01234", "12345", "23456", "34567", "45678", "56789", "67890"};
-        int tm, gd, stepLogin, menuGd1, stepGd, mtdBayar1, mtdBayar2;
+        int tm, gd, stepLogin, menuGd1, stepGd, MmtdBayar;
         String name, noTelp, tgl, verivikasi;
         long tarif, totalTarifPil1 = 0, totalTarifPil2 = 0,totalTarifPil3 = 0,totalTarifPil4 = 0;
         long hargaPil1, hargaPil2, hargaPil3, hargaPil4;
@@ -266,12 +266,12 @@ public class ProyekGedung {
                                                 System.out.println("2. Bayar lewat DANA/ShopeePay/LinkAja di no 085604054712 a.n Gerly Vaeyungfan");
                                                 do {
                                                     System.out.print("Pilih Metode Pembayaran : ");
-                                                    mtdBayar1 = input.nextInt();
-                                                    if (mtdBayar1 < 1 || mtdBayar1 > 2) {
+                                                    MmtdBayar = input.nextInt();
+                                                    if (MmtdBayar < 1 || MmtdBayar > 2) {
                                                         System.out.println("Mohon masukkan angka antara 1 dan 2.");
                                                     }
-                                                } while (mtdBayar1 < 1 || mtdBayar1 > 2);
-                                                switch (mtdBayar1) {
+                                                } while (MmtdBayar < 1 || MmtdBayar > 2);
+                                                switch (MmtdBayar) {
                                                     case 1:
                                                         boolean isKode1Valid = false;
                                                         do {
