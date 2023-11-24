@@ -7,7 +7,6 @@ public class DataMahasiswa {
     static int nilaiTertinggi = 0;
     static int mingguNilaiTertinggi = 0;
     static String nama;
-
     static int[][] nilaiMahasiswa = new int[jumlahMahasiswa][jumlahMinggu];
 
     static void main(String[] args) {
@@ -17,7 +16,6 @@ public class DataMahasiswa {
         lacakNilaiTertinggi();
         tampilMahasiswaNilaiTertimggi();
     }
-    
     
     static void namaMahasiswa(String nama){
         Scanner input = new Scanner(System.in);
@@ -83,7 +81,8 @@ public class DataMahasiswa {
                 }
             }
         }
-        System.out.println("-> Mahasiswa dengan nilai tertinggi adalah mahasiswa ke-" + (mahasiswaDenganNilaiTertinggi + 1) + " dengan nilai " + nilaiTertinggi + " pada minggu ke-" + mingguNilaiTertinggi);
+        System.out.println("-> Mahasiswa dengan nilai tertinggi adalah mahasiswa ke-" + (mahasiswaDenganNilaiTertinggi + 1) + " dengan nilai " + nilaiTertinggi +
+                            " pada minggu ke-" + mingguNilaiTertinggi);
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
     }
 }
